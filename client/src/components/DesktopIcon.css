@@ -1,0 +1,52 @@
+/* Style for the desktop icon container */
+.desktop-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    width: 80px;
+    cursor: pointer;
+    position: absolute;
+    left: 50px;
+    /* Adjust this to position the desktop icon */
+    top: 100px;
+}
+
+/* Style for the image (icon) */
+.icon-image {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 5px;
+}
+
+/* Style for the text under the icon */
+.desktop-icon span {
+    font-size: 12px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* The duplicate "app window" */
+.app-window {
+    position: fixed;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    width: 70vw;
+    /* The width is smaller than the screen */
+    height: 70vh;
+    /* The height is smaller than the screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* The image inside the app window (duplicate icon) */
+.app-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* Ensures the image scales without distortion */
+}
